@@ -1,0 +1,8 @@
+bill = float(input("Enter total bill amount: "))
+people = int(input("Enter number of people: "))
+share = bill / people
+print("Total Bill:", bill)
+print("Each person pays:", share)
+print("Type of bill:", type(bill))
+print("Type of people:", type(people))
+print("Type of share:", type(share))
