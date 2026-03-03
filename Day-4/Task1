@@ -1,0 +1,14 @@
+contacts = {
+    "Sharana": "9876543210",
+    "Amit": "9123456780",
+    "Priya": "9988776655"
+}
+contacts["Ravi"] = "9090909090"
+contacts["Amit"] = "9000011111"
+existing_contact = contacts.get("Priya", "Contact not found")
+missing_contact = contacts.get("Kiran", "Contact not found")
+print("Lookup Existing Contact (Priya):", existing_contact)
+print("Lookup Missing Contact (Kiran):", missing_contact)
+print("\n--- Contact List ---")
+for name, number in contacts.items():
+    print("Contact:", name, "| Phone:", number)
